@@ -15,6 +15,7 @@ h4,
 h5,
 h6 {
   font-family: "Sansita Swashed", cursive;
+  text-align: center;
 }
 
 .bg {
@@ -101,6 +102,29 @@ h6 {
 }
 .apiData .mainInfo .info p:last-of-type {
   margin: 0;
+}
+.apiData .mainInfo .forecast {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 500;
+}
+.apiData .days {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 30px;
+  margin: 20px 0 0 0;
+  color: white;
+  border-radius: 10px;
 }
 
 .lds-default {

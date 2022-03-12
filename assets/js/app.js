@@ -14,6 +14,8 @@ weatherForm.addEventListener('submit', event => {
 			hideLoader()
 			// console.log(dataFromAPI.current.condition.text)
 			let view = ''
+
+			view += `<h2>CURRENT WEATHER</h2>`
 			view += `<div class="mainInfo">`
 
 			//icon
@@ -33,7 +35,7 @@ weatherForm.addEventListener('submit', event => {
 			view += `<div class="info">`
 			view += `<p>The amount of rainfall: ${dataFromAPI.current.precip_mm} mm</p>`
 			view += `<p>Humidity: ${dataFromAPI.current.humidity} %</p>`
-			view += `<p>Wind:${dataFromAPI.current.wind_kph} km/h</p>`
+			view += `<p>Wind: ${dataFromAPI.current.wind_kph} km/h</p>`
 			view += `</div>`
 
 			//main info close
@@ -41,6 +43,7 @@ weatherForm.addEventListener('submit', event => {
 
 			//forecast
 
+			view += `<h2>3 DAY FORECAST</h2>`
 			view += `<div class="days">`
 			dataFromAPI.forecast.forecastday.forEach(day => {
 				view += `<div class="day">`
